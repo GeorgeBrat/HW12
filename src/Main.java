@@ -10,5 +10,16 @@ public class Main {
         book2.setPublicationYear(1909);
         System.out.println("Год публикации: " + book2.getPublicationYear());
         System.out.println("Автор: " + book2.getAuthor().getFirstName() + " " + book2.getAuthor().getLastName());
+        System.out.println(book2.getAuthor());
+        System.out.println("Книга: " + book2);
+
+        Author author3 = new Author("Джордж", "Оруэлл");
+        if(author1.equals(author3)) {
+            System.out.println("Авторы равны");
+        } else {
+            System.out.println("Авторы не равны");
+        }
+
+        System.out.println("Хэш код автора: " + author2.hashCode());
     }
 }
